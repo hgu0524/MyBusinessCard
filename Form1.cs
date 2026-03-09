@@ -29,5 +29,17 @@ namespace MyBusinessCard
         {
             pictureBox1.Image = Image.FromFile("C:\\Users\\사용자\\OneDrive\\Desktop\\짱구.png");
         }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            // 힌트 적용: 테두리 스타일을 고정 3D로 변경
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            // 다시 테두리를 없앰
+            pictureBox1.BorderStyle = BorderStyle.None;
+        }
     }
 }
