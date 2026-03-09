@@ -34,78 +34,102 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(106, 150);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(106, 137);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(291, 366);
+            pictureBox1.Size = new Size(321, 431);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
-            label1.Font = new Font("맑은 고딕", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 129);
-            label1.ForeColor = Color.DodgerBlue;
-            label1.Location = new Point(460, 150);
+            label1.Font = new Font("맑은 고딕", 22.125F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 129);
+            label1.ForeColor = SystemColors.Highlight;
+            label1.Location = new Point(477, 137);
             label1.Name = "label1";
-            label1.Size = new Size(253, 94);
+            label1.Size = new Size(222, 94);
             label1.TabIndex = 1;
             label1.Text = "홍근우";
             // 
             // label2
             // 
+            label2.AutoSize = true;
             label2.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            label2.Location = new Point(479, 242);
+            label2.Location = new Point(477, 250);
             label2.Name = "label2";
-            label2.Size = new Size(384, 64);
+            label2.Size = new Size(164, 45);
             label2.TabIndex = 2;
-            label2.Text = "컴퓨터sw";
-            label2.Click += label2_Click;
+            label2.Text = "컴퓨터SW";
             // 
             // label3
             // 
+            label3.AutoSize = true;
             label3.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            label3.Location = new Point(479, 294);
+            label3.Location = new Point(477, 327);
             label3.Name = "label3";
-            label3.Size = new Size(353, 46);
+            label3.Size = new Size(329, 45);
             label3.TabIndex = 3;
             label3.Text = "hgu0524@gmail.com";
-            label3.Click += label3_Click;
             // 
             // button1
             // 
-            button1.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            button1.Location = new Point(492, 422);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Font = new Font("맑은 고딕", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            button1.Location = new Point(477, 467);
             button1.Name = "button1";
-            button1.Size = new Size(425, 86);
+            button1.Size = new Size(445, 101);
             button1.TabIndex = 4;
             button1.Text = "배경색 바꾸기";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.Info;
+            button2.ForeColor = SystemColors.ActiveCaptionText;
+            button2.Location = new Point(864, 142);
+            button2.Name = "button2";
+            button2.Size = new Size(246, 63);
+            button2.TabIndex = 5;
+            button2.Text = "Instagram";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            button3.Location = new Point(106, 600);
+            button3.Name = "button3";
+            button3.Size = new Size(321, 73);
+            button3.TabIndex = 6;
+            button3.Text = "사진 바꾸기";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1170, 700);
+            ClientSize = new Size(1136, 740);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -115,5 +139,7 @@
         private Label label2;
         private Label label3;
         private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
